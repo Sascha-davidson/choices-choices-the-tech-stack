@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  --primary: #e7fff7;
+  --secondary: #d6dcff;
+  --light: white;
+  --text-color: #444d7b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #353535;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f5fa;
+  display: flex;
+}
+
+app-root{
+    display: flex;
+}
+
+main{
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    color: var(--text-color);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.homeMain {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  grid-template-areas:
+    "creatTournament creatTournament completedTournaments completedTournaments"
+    "creatTeam creatPlayer completedTournaments completedTournaments"
+    "currentTournament currentTournament currentTournament .";
+}
+
+.homeMain a {
+  background-color: white;
+  border-radius: 25px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+}
+
+.homeMain .creatPlayer {
+  grid-area: creatPlayer;
+  background-color: var(--primary);
+}
+
+.homeMain .creatTeam {
+  grid-area: creatTeam;
+  background-color: var(--primary);
+}
+
+.homeMain .creatTournament {
+  grid-area: creatTournament;
+  background-color: var(--primary);
+}
+
+.homeMain .completedTournaments {
+  grid-area: completedTournaments;
+}
+
+.homeMain .currentTournament {
+  grid-area: currentTournament;
+  background-color: var(--secondary);
+}
+
+.homeMain .frisbee {
+  border-radius: 25px;
+  box-shadow: var(--box-shadow);
+}
