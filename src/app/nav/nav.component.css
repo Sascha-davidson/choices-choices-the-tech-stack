@@ -35,8 +35,10 @@ a{
     color: #B8C1E0;
     font-size: 13px;
     gap: .5rem;
+    stroke: #B8C1E0;
 }
 
-a:nth-child(1){
-
+a:hover{
+    color: #444D7B;
+    stroke: #444D7B;
 }
