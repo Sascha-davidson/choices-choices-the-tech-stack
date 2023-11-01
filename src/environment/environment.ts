@@ -1,3 +1,5 @@
+// linking with contentful aint working + if working i generate a new ID & access token
+
 export const environment = {
     production: false,
     spaceId: 'l73i7a4rkxdl',
